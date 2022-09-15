@@ -31,7 +31,7 @@ const characterItem = ({
 </div>
 <div class='section'>
 <span class="text-gray">Created at: </span>
-<a>${created.slice(0, 8)}</a>
+<a>${created.slice(0, 4)} ${created.slice(5, 10)} ${created.slice(11, 19)}</a>
 </div>
 <div class='section'>
 <span class="text-gray">Episodes: </span>
@@ -47,13 +47,5 @@ const characterItem = ({
   
 
 `;
-
-// function episodesForCard(episode) {
-//   let episodesNumbers = [];
-//   episode.forEach((element) => {
-//     episodesNumbers.push(element.slice(40));
-//   });
-//   return episodesNumbers.splice(0, 4);
-// }
 
 export default characterItem;
